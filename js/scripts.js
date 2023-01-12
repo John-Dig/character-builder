@@ -16,17 +16,39 @@ function getVariables(ev) {
 
 
 //branching
+//background changing
 function givingColor() {
 
-  if (charName.length > 5) {
-    document.querySelector("body").style.backgroundColor= "Red";
-  } else 
-    {
-    document.querySelector("body").style.backgroundColor= "green";
+  if (charName.length > 3) {
+    document.querySelector("p").style.backgroundColor= "Red";
   }
-~
+
+   else
+    {
+    document.querySelector("p").style.backgroundColor= "green";
+  }
 
 
+//border changing
+  if(charPersonality.length > 3) {
+    document.querySelector("p").style.borderColor= "Yellow";
+  }
+  else
+  {
+    document.querySelector("p").style.borderColor= "Blue";
+  }
+
+
+//text changing
+  if(charSkill.length > 3) {
+    document.querySelector("p").style.color= "purple";
+  }
+  else
+  {
+    document.querySelector("p").style.color= "brown"
+  }
+
+  document.querySelector("p").innerText=charName;
 }
 // |load is a property of window, submit is a property of form
 
